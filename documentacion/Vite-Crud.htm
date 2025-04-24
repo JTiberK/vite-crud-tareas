@@ -7,6 +7,9 @@
 <!--
  /* Font Definitions */
  @font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
@@ -14,6 +17,9 @@
 @font-face
 	{font-family:"Segoe UI Emoji";
 	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0cm;
@@ -23,12 +29,19 @@
 	line-height:115%;
 	font-size:12.0pt;
 	font-family:"Aptos",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Encabezado Car";
+	margin:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
 a:link, span.MsoHyperlink
 	{color:#467886;
 	text-decoration:underline;}
+span.EncabezadoCar
+	{mso-style-name:"Encabezado Car";
+	mso-style-link:Encabezado;}
 .MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
+	{font-size:12.0pt;}
 .MsoPapDefault
 	{margin-bottom:8.0pt;
 	line-height:115%;}
@@ -110,6 +123,76 @@ Paso 1: Crear el proyecto con Vite</b></p>
 <p class=MsoNormal>Deberías ver el mensaje con la URL local (normalmente <a
 href="http://localhost:5173" target="_new">http://localhost:5173</a>) y una
 página de inicio de Vite+React.</p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='border:none;padding:0cm'>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-family:"Segoe UI Emoji",sans-serif'>&#128193;</span>
+Paso 2: Crear la estructura de carpetas y archivos</b></p>
+
+<p class=MsoNormal>Ve a la carpeta src/ y crea la siguiente estructura (puedes
+hacerlo manualmente o usando comandos si prefieres terminal):</p>
+
+<p class=MsoNormal>plaintext</p>
+
+<p class=MsoNormal>CopiarEditar</p>
+
+<p class=MsoNormal>src/</p>
+
+<p class=MsoNormal>  <span lang=EN-US style='font-family:"MS Gothic"'>&#9500;</span>&#9472;&#9472;
+components/</p>
+
+<p class=MsoNormal>  &#9474;   <span lang=EN-US style='font-family:"MS Gothic"'>&#9500;</span>&#9472;&#9472;
+FormularioTarea/</p>
+
+<p class=MsoNormal>  &#9474;   &#9474;   &#9492;&#9472;&#9472;
+FormularioTarea.jsx</p>
+
+<p class=MsoNormal>  &#9474;   <span lang=EN-US style='font-family:"MS Gothic"'>&#9500;</span>&#9472;&#9472;
+ListaTareas/</p>
+
+<p class=MsoNormal>  &#9474;   &#9474;   &#9492;&#9472;&#9472; ListaTareas.jsx</p>
+
+<p class=MsoNormal>  &#9474;   &#9492;&#9472;&#9472; Tarea/</p>
+
+<p class=MsoNormal>  &#9474;       &#9492;&#9472;&#9472; Tarea.jsx</p>
+
+<p class=MsoNormal>  &#9492;&#9472;&#9472; App.jsx</p>
+
+<p class=MsoNormal><span style='font-family:"Segoe UI Emoji",sans-serif'>&#128161;</span>
+<b>Consejo:</b> Asegúrate de que cada componente exporte correctamente su
+función. Por ejemplo:</p>
+
+<p class=MsoNormal>jsx</p>
+
+<p class=MsoNormal>CopiarEditar</p>
+
+<p class=MsoNormal>// FormularioTarea.jsx</p>
+
+<p class=MsoNormal>function FormularioTarea() {</p>
+
+<p class=MsoNormal>  return &lt;div&gt;Formulario de Tarea&lt;/div&gt;;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>export default FormularioTarea;</p>
+
+<p class=MsoNormal>Haz algo similar en ListaTareas.jsx y Tarea.jsx.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
